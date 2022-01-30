@@ -74,9 +74,8 @@ public class GameView extends View{
         maxTubeOffset = dHeight - minTubeOffset - gap;
         random = new Random();
         for(int i = 0; i < numberOfTubes; i++){
-            tubeX[i] = dWidth;
+            tubeX[i] = dWidth + i * distanceBetweenTubes;
             topTubeY[i] = minTubeOffset + random.nextInt(maxTubeOffset - minTubeOffset + 1);
-
         }
     }
 
@@ -105,7 +104,6 @@ public class GameView extends View{
                 if(tubeX[i] < -toptube.getWidth()){
                     tubeX[i] += numberOfTubes * distanceBetweenTubes;
                     topTubeY[i] = minTubeOffset + random.nextInt(maxTubeOffset - minTubeOffset + 1);
-
                 }
                 canvas.drawBitmap(toptube, tubeX[i], topTubeY[i] - toptube.getHeight(), null);
                 canvas.drawBitmap(bottomtube, tubeX[i], topTubeY[i] + gap, null);
