@@ -16,4 +16,17 @@
         android:background="@android:color/transparent"
         android:src="@drawable/play" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="151dp"
+        android:layout_height="37dp"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="17dp"
+        android:text="practice app / alderight" />
+
 </RelativeLayout>
