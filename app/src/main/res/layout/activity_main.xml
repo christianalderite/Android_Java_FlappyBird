@@ -11,9 +11,9 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/play"
-        android:onClick="startGame"/>
+        android:layout_centerInParent="true"
+        android:onClick="startGame"
+        android:background="@android:color/transparent"
+        android:src="@drawable/play" />
 
 </RelativeLayout>
